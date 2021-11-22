@@ -1,0 +1,49 @@
+.footer {
+  background-color: var(--clr-green-100);
+  margin-top: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 64rem;
+  padding: 3rem 0.5rem;
+  margin: auto;
+}
+
+.infoList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialList a::after {
+  background-image: none;
+}
+
+@media (max-width: 64rem) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .infoList {
+    flex-direction: column;
+  }
+
+  .socialList {
+    justify-content: center;
+  }
+}
