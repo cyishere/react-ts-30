@@ -5,3 +5,24 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.main {
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.projectGrid {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+@media (max-width: 64rem) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

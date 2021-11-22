@@ -1,0 +1,142 @@
+.card {
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-gray-100);
+  border-radius: var(--br-md);
+  height: 100%;
+  position: relative;
+}
+
+.flag {
+  color: var(--clr-white);
+  background-color: var(--clr-green-700);
+  border-radius: var(--br-sm);
+  text-align: center;
+  width: 72px;
+  height: 36px;
+  padding: 0 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: -6px;
+  z-index: 9999;
+}
+
+.flag::before {
+  content: "";
+  background-color: var(--clr-green-500);
+  border-radius: var(--br-sm);
+  width: 72px;
+  height: 36px;
+  padding: 0 0.25rem;
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+}
+
+.flag .text {
+  font-size: 1.125rem;
+  line-height: 1;
+  margin: auto;
+  position: relative;
+  transform: translate(-1px, -1px);
+}
+
+.screenshot {
+  width: 100%;
+  border-radius: var(--br-md) var(--br-md) 0 0;
+  border-bottom: 1px solid var(--clr-gray-100);
+  overflow: hidden;
+}
+
+.screenshot img {
+  display: block;
+  width: 100%;
+  transform-origin: 50% 75%;
+  transition: transform 600ms;
+  will-change: transform;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .card:hover .screenshot img {
+    transform: scale(1.1);
+    transition: transform 200ms;
+  }
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.4;
+  color: var(--clr-black);
+  margin-bottom: 1rem;
+}
+
+.description {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 1;
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--br-base);
+  width: 10rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 200ms;
+}
+
+.btn:hover {
+  transition: background 500ms;
+}
+
+.btn:focus {
+  outline-offset: 2px;
+}
+
+.btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a.btn::after {
+  background-image: none;
+}
+
+.btnOutline {
+  color: var(--clr-gray-300);
+  border-color: var(--clr-gray-300);
+}
+
+.btnOutline:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-gray-300);
+}
+
+.btnPrimary {
+  color: var(--clr-white);
+  background-color: var(--clr-orange);
+  border-color: var(--clr-orange);
+}
+
+.btnPrimary:hover {
+  color: var(--clr-orange);
+  background-color: transparent;
+}

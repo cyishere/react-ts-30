@@ -20,6 +20,7 @@ html {
   --fw-black: 900;
 
   /* Border radius */
+  --br-sm: 2px;
   --br-base: 0.25rem;
   --br-md: 0.5rem;
 }
@@ -162,6 +163,7 @@ body {
   font-family: var(--ff-primary);
   font-size: 16px;
   font-weight: var(--fw-normal);
+  color: var(--clr-gray-300);
 }
 
 a {
