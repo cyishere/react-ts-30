@@ -217,3 +217,14 @@ a:hover::after {
   padding: 0;
   border: 0;
 }
+
+/**
+ * =======================================
+ * Styles for 01. CSS Variables ==========
+ * =======================================
+ */
+html {
+  --baseColor: #ec4899;
+  --spacing: 10px;
+  --blur: 10px;
+}
