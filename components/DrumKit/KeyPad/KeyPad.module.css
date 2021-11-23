@@ -17,6 +17,7 @@
   align-items: center;
   gap: 0.5rem;
   transition: all 0.07s ease;
+  cursor: pointer;
 }
 
 .key.on {
