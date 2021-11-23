@@ -40,8 +40,8 @@ const KeyPad: React.FC<KeyPadProps> = ({ sound }) => {
   return (
     <div ref={padRef} className={styles.key} onClick={playSound}>
       <kbd>{sound.key}</kbd>
-      <audio ref={audioRef} className={styles.audio} src={soundFile}></audio>
       <span className={styles.sound}>{sound.name}</span>
+      <audio ref={audioRef} className={styles.audio} src={soundFile}></audio>
     </div>
   );
 };
