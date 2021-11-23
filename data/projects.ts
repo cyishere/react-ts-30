@@ -16,4 +16,12 @@ export const PROJECTS: ProjectType[] = [
     code: "https://github.com/cyishere/react-ts-30/componentes/CSSVariables/",
     demo: "/01-css-variables",
   },
+  {
+    id: 2,
+    title: "Drum Kit",
+    description: "Interact keyboard with JS; react refs.",
+    screenshot: "/screenshots/02-drum-kit.png",
+    code: "https://github.com/cyishere/react-ts-30/componentes/DrumKit/",
+    demo: "/02-drum-kit",
+  },
 ];

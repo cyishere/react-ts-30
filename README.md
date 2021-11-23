@@ -8,3 +8,10 @@ Small projects of Wes Bos’ [JavaScript 30](https://javascript30.com) but with 
 🚀 live demo
 
 ![CSS Variables screenshot](/public/screenshots/01-css-variables.png)
+
+## Day 2: Drum Kit
+
+💻 [source code](/components/DrumKit/DrumKit.tsx)
+🚀 live demo
+
+![CSS Variables screenshot](/public/screenshots/02-drum-kit.png)
