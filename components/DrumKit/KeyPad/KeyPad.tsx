@@ -28,7 +28,7 @@ const KeyPad: React.FC<KeyPadProps> = ({ sound }) => {
 
   useEffect(() => {
     document.addEventListener("keydown", function (e: KeyboardEvent) {
-      if (e.keyCode.toString() === sound.number) {
+      if (e.key.toLocaleUpperCase() === sound.key) {
         playSound();
       }
     });
