@@ -24,4 +24,12 @@ export const PROJECTS: ProjectType[] = [
     code: "https://github.com/cyishere/react-ts-30/componentes/DrumKit/",
     demo: "/02-drum-kit",
   },
+  {
+    id: 3,
+    title: "Clock",
+    description: "Math with JavaScript.",
+    screenshot: "/screenshots/03-clock.png",
+    code: "https://github.com/cyishere/react-ts-30/componentes/Clock/",
+    demo: "/03-clock",
+  },
 ];
