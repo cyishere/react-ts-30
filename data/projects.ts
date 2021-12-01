@@ -32,4 +32,12 @@ export const PROJECTS: ProjectType[] = [
     code: "https://github.com/cyishere/react-ts-30/componentes/Clock/",
     demo: "/03-clock",
   },
+  {
+    id: 4,
+    title: "Click and Drag",
+    description: "Calculate postion on mouse events.",
+    screenshot: "/screenshots/04-click-and-drag.png",
+    code: "https://github.com/cyishere/react-ts-30/componentes/ClickAndDrag/",
+    demo: "/04-click-and-drag",
+  },
 ];

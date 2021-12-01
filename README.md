@@ -19,8 +19,16 @@ live demo 🚀
 
 ## Day 3: Clock
 
-[source code](/components/DrumKit/DrumKit.tsx) 💻
+[source code](/components/Clock/Clock.tsx) 💻
 
 live demo 🚀
 
 ![Clock](/public/screenshots/03-clock.png)
+
+## Day 4: Click and Drag
+
+[source code](/components/ClickAndDrag/ClickAndDrag.tsx) 💻
+
+live demo 🚀
+
+![Clock](/public/screenshots/04-click-and-drag.png)

@@ -15,13 +15,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <span className={styles.text}>Day {project.id}</span>
       </div>
       <div className={styles.screenshot}>
-        <Image
-          src={project.screenshot}
-          alt={project.title}
-          width={310}
-          height={180}
-          layout="responsive"
-        />
+        {project.screenshot ? (
+          <Image
+            src={project.screenshot}
+            alt={project.title}
+            width={310}
+            height={180}
+            layout="responsive"
+          />
+        ) : (
+          <div className={styles.placeholder} />
+        )}
       </div>
       <div className={styles.content}>
         <h3 className={styles.title}>{project.title}</h3>
