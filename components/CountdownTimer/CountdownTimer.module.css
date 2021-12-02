@@ -1,0 +1,77 @@
+.container {
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  background-color: #8e24aa;
+  background-image: linear-gradient(
+    45deg,
+    #42a5f5 0%,
+    #478ed1 50%,
+    #0d47a1 100%
+  );
+  height: 75vh;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+}
+
+.timerControls {
+  display: flex;
+}
+
+.timerControls > * {
+  flex: 1;
+}
+
+.timerControls form {
+  flex: 1;
+  display: flex;
+}
+
+.timerControls input {
+  border: 0 solid hsl(209deg 20% 80%);
+  border-top-width: 1px;
+  padding: 2rem;
+  flex: 1;
+}
+
+.timerButton {
+  font-family: inherit;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.timerButton:hover,
+.timerButton:focus {
+  background: rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.displayTimeLeft {
+  font-weight: 100;
+  font-size: 20rem;
+  color: white;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+  margin: 0;
+}
+
+.displayEndTime {
+  font-size: 4rem;
+  color: white;
+}

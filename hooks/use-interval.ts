@@ -19,6 +19,8 @@ const useInterval = (callback: () => void, delay: number | null) => {
       }
     }
   }, [delay]);
+
+  return intervalRef.current;
 };
 
 export default useInterval;
