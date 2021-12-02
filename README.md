@@ -32,3 +32,11 @@ live demo 🚀
 live demo 🚀
 
 ![Clock](/public/screenshots/04-click-and-drag.png)
+
+## Day 5: Countdown Timer
+
+[source code](/components/CountdownTimer/CountdownTimer.tsx) 💻
+
+live demo 🚀
+
+![Clock](/public/screenshots/05-countdown-timer.png)

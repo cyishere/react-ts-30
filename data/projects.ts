@@ -43,8 +43,8 @@ export const PROJECTS: ProjectType[] = [
   {
     id: 5,
     title: "Countdown Timer",
-    description: "",
-    screenshot: "",
+    description: "JavaScript Date functions & setInterval.",
+    screenshot: "/screenshots/05-countdown-timer.png",
     code: "https://github.com/cyishere/react-ts-30/componentes/CountdownTimer/CountdownTimer.tsx",
     demo: "/05-countdown-timer",
   },
