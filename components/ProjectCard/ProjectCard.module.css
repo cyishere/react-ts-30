@@ -139,11 +139,11 @@ a.btn::after {
 
 .btnPrimary {
   color: var(--clr-white);
-  background-color: var(--clr-orange);
-  border-color: var(--clr-orange);
+  background-color: var(--clr-purple);
+  border-color: var(--clr-purple);
 }
 
 .btnPrimary:hover {
-  color: var(--clr-orange);
+  color: var(--clr-purple);
   background-color: transparent;
 }

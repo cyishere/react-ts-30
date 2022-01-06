@@ -10,6 +10,7 @@ html {
   --clr-green-100: hsl(149deg 80% 90%);
   --clr-green-500: hsl(160deg 84% 39%);
   --clr-green-700: hsl(161deg 94% 30%);
+  --clr-purple: hsl(248.4deg 74.2% 47.1%);
 
   /* Fonts */
   --ff-primary: "Poppins", sans-serif;
