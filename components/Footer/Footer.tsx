@@ -1,48 +1,44 @@
+import Link from "next/link";
+import { Twitter, GitHub, Codepen } from "react-feather";
+
 import styles from "./Footer.module.css";
 import Emoji from "../Emoji";
-import SocialIcon from "./SocialIcon";
 
 const Footer: React.FC = () => {
+  const createdAt = new Date("2021").getFullYear();
+  const today = new Date();
+  const thisYear = today.getFullYear();
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <ul className={styles.infoList}>
-          <li>&copy; 2021.</li>
-          <li>
+        <div className={styles.copyright}>
+          <p>
+            &copy;{" "}
+            {createdAt === thisYear ? thisYear : `${createdAt} - ${thisYear}`}
+          </p>
+          <p>
             Made with <Emoji name="coffee">☕</Emoji> &{" "}
             <Emoji name="cat">🐈</Emoji> in Tianjin, China.
-          </li>
-        </ul>
-
-        <ul className={styles.socialList}>
-          <li>
-            <a
-              href="https://twitter.com/cyishere"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <SocialIcon iconUrl="/icons/twitter.svg" text="CY's Twitter" />
+          </p>
+        </div>
+        <div className={styles.socialLinks}>
+          <Link href="https://twitter.com/cyishere" passHref>
+            <a className={styles.socialIcon}>
+              <Twitter size={30} />
             </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/cyishere"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <SocialIcon iconUrl="/icons/github.svg" text="CY's GitHub" />
+          </Link>
+          <Link href="https://github.com/cyishere" passHref>
+            <a className={styles.socialIcon}>
+              <GitHub size={30} />
             </a>
-          </li>
-          <li>
-            <a
-              href="https://codepen.io/cyishere"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <SocialIcon iconUrl="/icons/codepen.svg" text="CY's CodePen" />
+          </Link>
+          <Link href="https://codepen.io/cyishere" passHref>
+            <a className={styles.socialIcon}>
+              <Codepen size={30} />
             </a>
-          </li>
-        </ul>
+          </Link>
+        </div>
       </div>
     </footer>
   );
